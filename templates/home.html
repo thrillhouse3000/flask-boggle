@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}BOGGLE{% endblock %}
+
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6"  id="homeDiv">
+            <h1>Welcome to Boggle!</h1>
+
+            <ul>
+                <li class="text-decoration-underline">Instructions:</li>
+                <li>Create words using letters on adjacent tiles in any direction.</li>
+                <li>The same tile cannot be used twice.</li>
+                <li>Enter your word in the guess input and submit.</li>
+                <li>You have 60 seconds to find as many words as possible.</li>
+                <li>See if you can beat your high score!</li>
+            </ul>
+    
+            <a href="/new-game" class="btn btn-success mb-2">New Game</a>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}

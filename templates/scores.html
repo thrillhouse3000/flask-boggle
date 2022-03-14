@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}SCORE{% endblock %}
+
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6" id="scoreDiv">
+            <p>You've played {{game_count}} games!</p>
+            <p>Your High Score: {{high_score}}</p>
+            <a href="/new-game" class="btn btn-success mb-2">Play Again?</a>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}

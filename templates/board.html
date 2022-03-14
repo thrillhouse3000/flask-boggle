@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}BOGGLE{% endblock %}
+
+{% block content%}
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col text-start">
+            <ul id="instructions">
+                <li class="text-decoration-underline">Instructions:</li>
+                <li>Create words using letters on adjacent tiles in any direction</li>
+                <li>The same tile cannot be used twice</li>
+                <li>Enter your word in the guess input and submit</li>
+                <li>You have 60 seconds to find as many words as possible</li>
+                <li>See if you can beat your high score!</li>
+            </ul>
+        </div>
+        <div class="col-6" id="boardDiv">
+            <h2 id="timer" class="text-center">Timer: <span id="time"></span></h2>
+            <div id="board">
+                <table  class="table table-borderless">
+                    {% for row in board %}
+                    <tr>
+                        {% for char in row %}
+                        <td>{{char}}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            
+            <div id="div-form">
+                <form action="" method="POST">
+                    <input type="text" name="guess" id="guess" class="form-control text-center" placeholder="Enter a Guess">
+                    <button id="guessSubmit" class="btn btn-primary mb-2 w-100">Guess</button>
+                </form>
+            </div>
+        </div>
+        <div class="col">
+            <section id="message"></section>
+            <section id="score"></section>
+        </div>
+    </div>
+</div>
+
+<section id="end"></section>
+{% endblock %}

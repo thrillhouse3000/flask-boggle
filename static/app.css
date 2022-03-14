@@ -1,0 +1,82 @@
+body {
+	text-align: center;
+	background-image: url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	background-size: cover;
+}
+
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0.3rem;
+}
+
+#homeDiv {
+	background-color: rgba(211, 211, 211, 0.8);
+	border-radius: 15px;
+	margin-top: 10%;
+	font-size: 1.5rem;
+}
+
+#boardDiv {
+	background-color: rgba(211, 211, 211);
+	border-radius: 15px;
+}
+
+#scoreDiv {
+	background-color: rgba(211, 211, 211, 0.8);
+	border-radius: 15px;
+	margin-top: 10%;
+	font-size: 2rem;
+}
+
+#board {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+
+#board table tr td {
+	/* border: 1px black solid; */
+	border-radius: 20px;
+	margin: 0.3rem;
+	font-size: 3rem;
+	width: 6rem;
+	height: 6rem;
+	background-color: white;
+}
+
+#timer {
+	font-family: 'Orbitron', sans-serif;
+}
+
+#instructions {
+	margin-top: 50%;
+	font-size: 1.2rem;
+	list-style-type: disc;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+}
+
+#message {
+	font-size: 3rem;
+	margin-top: 75%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+	transition: all 1s;
+}
+
+#score {
+	font-size: 3rem;
+	margin-top: 75%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+}
+
+.btn {
+	margin-top: 1rem;
+}
